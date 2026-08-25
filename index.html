@@ -6,9 +6,10 @@
   <meta name="description" content="AS Interior Works provides professional woodwork, wardrobes, kitchens, doors, ceilings and partitions in Lahore, backed by 35+ years of experience.">
   <meta name="theme-color" content="#16120e">
   <title>AS Interior Works | Woodwork & Interior Solutions Lahore</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,8 +22,11 @@
     <nav>
       <a href="#home">Home</a>
       <a href="#services">Services</a>
+      <a href="#projects">Design Ideas</a>
       <a href="#about">About</a>
       <a href="#process">Process</a>
+      <button class="lang-toggle" type="button" aria-label="Change language">اردو</button>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Light / Dark mode">☾</button>
       <a class="nav-cta" href="#contact">Get a Quote</a>
     </nav>
   </header>
@@ -104,6 +108,76 @@
       </div>
     </section>
 
+    <section class="project-showcase section" id="projects">
+      <div class="section-head">
+        <div><p class="section-label">DESIGN POSSIBILITIES</p><h2>Imagine what we can<br><span>create for your space.</span></h2></div>
+        <p>These inspiration images show styles, materials and solutions we can adapt to your home, office or shop according to your space and budget.</p>
+      </div>
+      <div class="project-filters" role="group" aria-label="Filter projects">
+        <button class="active" data-filter="all">All Ideas</button>
+        <button data-filter="wood">Woodwork</button>
+        <button data-filter="kitchen">Kitchens</button>
+        <button data-filter="ceiling">Ceilings</button>
+        <button data-filter="finish">Finishing</button>
+      </div>
+      <div class="project-grid">
+        <article class="project-tile project-wide" data-category="kitchen"><img src="assets/service-kitchen.png" alt="Modular kitchen design possibility" loading="lazy"><div><span>DESIGN IDEA • KITCHEN</span><h3>Practical Modular Kitchen</h3></div></article>
+        <article class="project-tile" data-category="wood"><img src="assets/service-woodwork-wardrobe.png" alt="Custom wardrobe design possibility" loading="lazy"><div><span>DESIGN IDEA • WOODWORK</span><h3>Full-Wall Wardrobe</h3></div></article>
+        <article class="project-tile" data-category="wood finish"><img src="assets/service-doors.png" alt="Door and frame design possibility" loading="lazy"><div><span>DESIGN IDEA • WOODWORK</span><h3>Doors & Frames</h3></div></article>
+        <article class="project-tile" data-category="ceiling"><img src="assets/service-ceiling.png" alt="Gypsum ceiling design possibility" loading="lazy"><div><span>DESIGN IDEA • CEILING</span><h3>Gypsum & Cove Lighting</h3></div></article>
+        <article class="project-tile project-wide" data-category="wood finish"><img src="assets/service-partition.png" alt="Wood partition design possibility" loading="lazy"><div><span>DESIGN IDEA • PARTITION</span><h3>Display Partition</h3></div></article>
+        <article class="project-tile" data-category="finish"><img src="assets/service-flooring.png" alt="Laminate flooring design possibility" loading="lazy"><div><span>DESIGN IDEA • FLOORING</span><h3>Laminate Wood Flooring</h3></div></article>
+        <article class="project-tile" data-category="wood finish"><img src="assets/project-tv-wall.png" alt="TV wall design possibility" loading="lazy"><div><span>DESIGN IDEA • WOODWORK</span><h3>TV Media Wall</h3></div></article>
+        <article class="project-tile project-wide" data-category="wood finish"><img src="assets/project-home-office.png" alt="Home office design possibility" loading="lazy"><div><span>DESIGN IDEA • WOODWORK</span><h3>Home Office Storage</h3></div></article>
+        <article class="project-tile" data-category="kitchen"><img src="assets/project-kitchen-white.png" alt="White kitchen design possibility" loading="lazy"><div><span>DESIGN IDEA • KITCHEN</span><h3>White UV Kitchen</h3></div></article>
+        <article class="project-tile" data-category="kitchen"><img src="assets/project-kitchen-formica.png" alt="Formica kitchen design possibility" loading="lazy"><div><span>DESIGN IDEA • KITCHEN</span><h3>Formica Apartment Kitchen</h3></div></article>
+        <article class="project-tile project-wide" data-category="kitchen"><img src="assets/project-kitchen-grey.png" alt="Grey kitchen design possibility" loading="lazy"><div><span>DESIGN IDEA • KITCHEN</span><h3>Grey & Oak Kitchen</h3></div></article>
+        <article class="project-tile" data-category="ceiling"><img src="assets/project-ceiling-bedroom.png" alt="Bedroom ceiling design possibility" loading="lazy"><div><span>DESIGN IDEA • CEILING</span><h3>Bedroom Cove Ceiling</h3></div></article>
+        <article class="project-tile" data-category="ceiling finish"><img src="assets/project-ceiling-pvc.png" alt="PVC ceiling design possibility" loading="lazy"><div><span>DESIGN IDEA • CEILING</span><h3>PVC Panel Ceiling</h3></div></article>
+        <article class="project-tile project-wide" data-category="ceiling"><img src="assets/project-ceiling-office.png" alt="Office ceiling design possibility" loading="lazy"><div><span>DESIGN IDEA • COMMERCIAL</span><h3>Office Reception Ceiling</h3></div></article>
+        <article class="project-tile" data-category="kitchen ceiling"><img src="assets/hero-interior.png" alt="Complete interior design possibility" loading="lazy"><div><span>DESIGN IDEA • INTERIOR</span><h3>Kitchen & Ceiling Finish</h3></div></article>
+      </div>
+    </section>
+
+    <section class="transformation section">
+      <div class="transform-copy">
+        <p class="section-label">VISUALISE THE CHANGE</p>
+        <h2>See what your space<br>could become.</h2>
+        <p>This concept comparison helps you imagine how custom storage and clean installation can transform the same room. Select Before or After to view the complete matching space.</p>
+        <div class="transform-points"><span>✓ Accurate measurement</span><span>✓ Practical storage</span><span>✓ Clean installation</span></div>
+      </div>
+      <div class="compare" data-state="before">
+        <img class="compare-before" src="assets/project-kitchen-before-matched.png" alt="Same kitchen room before cabinet installation">
+        <div class="compare-after"><img src="assets/service-kitchen.png" alt="Kitchen after custom cabinet installation"></div>
+        <div class="compare-controls" role="group" aria-label="View before or after"><button class="active" data-view="before">Before</button><button data-view="after">After</button></div>
+      </div>
+    </section>
+
+    <section class="trust section">
+      <div class="trust-head"><p class="section-label">WHY CHOOSE US</p><h2>Experience that<br>works for you.</h2></div>
+      <div class="trust-grid">
+        <article><span>01</span><h3>35+ Years</h3><p>International and Lahore market experience combined.</p></article>
+        <article><span>02</span><h3>Site Measurement</h3><p>Every job starts with accurate dimensions and practical advice.</p></article>
+        <article><span>03</span><h3>Material Choice</h3><p>Clear options according to your use, style and budget.</p></article>
+        <article><span>04</span><h3>Direct Contact</h3><p>Speak directly with the experienced person handling your work.</p></article>
+      </div>
+      <div class="area-strip">
+        <p>PROJECT AREAS</p>
+        <strong>DHA</strong><i></i><strong>MODEL TOWN</strong><i></i><strong>JOHAR TOWN</strong><i></i><strong>SHAHDARA</strong><i></i><strong>LAHORE</strong>
+      </div>
+    </section>
+
+    <section class="materials section">
+      <div class="section-head"><div><p class="section-label">MATERIAL OPTIONS</p><h2>Right material.<br>Right application.</h2></div><p>We help you choose a finish that looks good, performs well and stays within budget.</p></div>
+      <div class="material-list">
+        <article><b>01</b><span class="material-swatch mdf"></span><div><h3>MDF & Laminate</h3><p>Wardrobes, kitchens and storage</p></div></article>
+        <article><b>02</b><span class="material-swatch uv"></span><div><h3>UV Sheet</h3><p>Glossy modern kitchen finishes</p></div></article>
+        <article><b>03</b><span class="material-swatch wood"></span><div><h3>Wood & Veneer</h3><p>Doors, frames and decorative work</p></div></article>
+        <article><b>04</b><span class="material-swatch gypsum"></span><div><h3>Gypsum Board</h3><p>Ceilings and room partitions</p></div></article>
+        <article><b>05</b><span class="material-swatch pvc"></span><div><h3>PVC</h3><p>Doors and moisture-friendly ceilings</p></div></article>
+      </div>
+    </section>
+
     <section class="about section" id="about">
       <div class="about-visual">
         <div class="experience"><strong>35<sup>+</sup></strong><span>YEARS OF<br>EXPERIENCE</span></div>
@@ -151,6 +225,10 @@
         <div class="field"><label for="phone">PHONE NUMBER</label><input id="phone" name="phone" type="tel" placeholder="03XX XXXXXXX" required></div>
         <div class="field"><label for="service">SERVICE NEEDED</label>
           <select id="service" name="service" required><option value="" disabled selected>Select a service</option><option>Custom Woodwork</option><option>Kitchen Cabinets</option><option>Doors & Frames</option><option>Ceiling Solutions</option><option>Partitions & Rooms</option><option>Wood Flooring</option><option>Other Interior Work</option></select>
+        </div>
+        <div class="field field-row">
+          <div><label for="location">PROJECT LOCATION</label><input id="location" name="location" placeholder="e.g. DHA, Lahore"></div>
+          <div><label for="budget">ESTIMATED BUDGET</label><select id="budget" name="budget"><option value="Not selected">Select range</option><option>Under Rs. 100,000</option><option>Rs. 100,000 – 300,000</option><option>Rs. 300,000 – 700,000</option><option>Above Rs. 700,000</option></select></div>
         </div>
         <div class="field"><label for="message">TELL US ABOUT YOUR PROJECT</label><textarea id="message" name="message" rows="3" placeholder="Project type, location and requirements"></textarea></div>
         <button class="btn primary form-btn" type="submit">Send on WhatsApp <span>↗</span></button>
